@@ -1,0 +1,17 @@
+[package]
+name = "bark_push"
+version = "0.1.0"
+edition = "2024"
+description = "An incomplete brak sdk for ios message push"
+license = "MIT"
+
+[dependencies]
+openssl = { version = "0.10", features = ["vendored"] }
+base64 = "0.22"
+reqwest = { version = "0.12", features = ["rustls-tls","json"] }
+tokio = { version = "1", features = ["full"] }
+urlencoding = "2.1"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_with = "3"
+serde_json = "1"
+anyhow = "1.0.100"
