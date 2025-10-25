@@ -2,8 +2,11 @@
 name = "bark_push"
 version = "0.1.0"
 edition = "2024"
+authors = ["kk <kkth.xj@gmail.com>"]
 description = "An incomplete brak sdk for ios message push"
 license = "MIT"
+repository = "https://github.com/kkthmyh/bark_push" 
+
 
 [dependencies]
 openssl = { version = "0.10", features = ["vendored"] }
