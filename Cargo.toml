@@ -1,6 +1,6 @@
 [package]
 name = "bark_push"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["kk <kkth.xj@gmail.com>"]
 description = "An incomplete brak sdk for ios message push"
@@ -12,7 +12,7 @@ repository = "https://github.com/kkthmyh/bark_push"
 openssl = { version = "0.10", features = ["vendored"] }
 base64 = "0.22"
 reqwest = { version = "0.12", features = ["rustls-tls","json"] }
-tokio = { version = "1", features = ["full"] }
+tokio = { version = "1", features = ["rt","rt-multi-thread","macros"] }
 urlencoding = "2.1"
 serde = { version = "1.0.228", features = ["derive"] }
 serde_with = "3"
